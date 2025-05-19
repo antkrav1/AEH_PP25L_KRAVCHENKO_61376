@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 package pl.pp;
 import java.util.Scanner;
-public class mojaDrugaAplikacja {
+public class mojaDrugaAplikacja2 {
         public static void main(String[] args) {
             double x = 10;
             double y = 2;
