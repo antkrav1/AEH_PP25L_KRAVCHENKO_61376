@@ -1,7 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner;
-public class mojaDrugaAplikacja2 {
+public class mojaDrugaAplikacja {
         public static void main(String[] args) {
             double x = 10;
             double y = 2;
