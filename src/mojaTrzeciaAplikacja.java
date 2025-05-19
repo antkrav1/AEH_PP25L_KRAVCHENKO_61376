@@ -1,49 +1,49 @@
 
 import java.util.Scanner;
-class mojaTrzeciaAplikacja{
-public class  mojaTrzeciaAplikacja  {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+class mojaTrzeciaAplikacja {
+    public class mojaTrzeciaAplikacja {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
 
-        // Część 1: konwersja dni na tygodnie i dni
-        System.out.println("=== Konwersja dni na tygodnie i dni ===");
+            // Część 1: konwersja dni na tygodnie i dni
+            System.out.println("=== Konwersja dni na tygodnie i dni ===");
 
-        while (true) {
-            System.out.print("Podaj liczbę dni (wartość ujemna kończy program): ");
-            int dni = scanner.nextInt();
+            while (true) {
+                System.out.print("Podaj liczbę dni (wartość ujemna kończy program): ");
+                int dni = scanner.nextInt();
 
-            if (dni < 0) {
-                break;
+                if (dni < 0) {
+                    break;
+                }
+
+                int tygodnie = dni / 7;
+                int pozostaleDni = dni % 7;
+
+                System.out.printf("%d dni to %d tygodnie i %d dni%n", dni, tygodnie, pozostaleDni);
             }
 
-            int tygodnie = dni / 7;
-            int pozostaleDni = dni % 7;
+            // Część 2: konwersja temperatury
+            System.out.println("\n=== Konwersja temperatury Fahrenheit -> Celsjusz -> Kelwin ===");
 
-            System.out.printf("%d dni to %d tygodnie i %d dni%n", dni, tygodnie, pozostaleDni);
-        }
+            while (true) {
+                System.out.print("Podaj temperaturę w Fahrenheitach (wpisz -1 aby zakończyć): ");
+                double fahrenheit = scanner.nextDouble();
 
-        // Część 2: konwersja temperatury
-        System.out.println("\n=== Konwersja temperatury Fahrenheit -> Celsjusz -> Kelwin ===");
+                if (fahrenheit == -1) {
+                    break;
+                }
 
-        while (true) {
-            System.out.print("Podaj temperaturę w Fahrenheitach (wpisz -1 aby zakończyć): ");
-            double fahrenheit = scanner.nextDouble();
+                double celsius = (fahrenheit - 32) / 1.8;
+                double kelvin = celsius + 273.16;
 
-            if (fahrenheit == -1) {
-                break;
+                System.out.printf("Fahrenheit: %.2f°F, Celsjusz: %.2f°C, Kelwin: %.2fK%n",
+                        fahrenheit, celsius, kelvin);
             }
 
-            double celsius = (fahrenheit - 32) / 1.8;
-            double kelvin = celsius + 273.16;
-
-            System.out.printf("Fahrenheit: %.2f°F, Celsjusz: %.2f°C, Kelwin: %.2fK%n",
-                    fahrenheit, celsius, kelvin);
+            scanner.close();
+            System.out.println("Program zakończony.");
         }
-
-        scanner.close();
-        System.out.println("Program zakończony.");
     }
-}
 
         /*Scanner scanner = new Scanner(System.in);
 
@@ -97,5 +97,6 @@ public class  mojaTrzeciaAplikacja  {
             }
         }
         scanner.close();*/
+}
     }
 }
