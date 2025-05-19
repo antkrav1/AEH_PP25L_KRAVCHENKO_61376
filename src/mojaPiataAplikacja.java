@@ -1,4 +1,4 @@
-package pl.pp;
+
 
 public class mojaPiataAplikacja {
     public static void main(String[] args) {
