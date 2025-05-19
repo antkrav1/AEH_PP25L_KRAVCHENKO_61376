@@ -1,4 +1,4 @@
-package pl.pp;
+
 import java.util.Scanner;
 
 public class mojaTrzeciaAplikacja {
