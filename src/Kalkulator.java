@@ -3,9 +3,8 @@ import java.util.Scanner;
 public class Kalkulator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        boolean kontynuuj = true;
 
-        while (kontynuuj) {
+        while (true) {
             System.out.println("\n=== MENU ===");
             System.out.println("1. Dodawanie");
             System.out.println("2. Odejmowanie");
@@ -29,7 +28,7 @@ public class Kalkulator {
             System.out.print("Podaj pierwszą liczbę: ");
             if (!scanner.hasNextDouble()) {
                 System.out.println("To nie jest liczba! Spróbuj ponownie.");
-                scanner.next(); // pomija błędne wejście
+                scanner.next();
                 continue;
             }
             double a = scanner.nextDouble();
